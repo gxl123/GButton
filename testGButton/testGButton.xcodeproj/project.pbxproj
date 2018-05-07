@@ -13,6 +13,7 @@
 		C8399C4B20A03521003D6F86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8399C4A20A03521003D6F86 /* Assets.xcassets */; };
 		C8399C4E20A03521003D6F86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8399C4C20A03521003D6F86 /* LaunchScreen.storyboard */; };
 		C8399C5120A03521003D6F86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8399C5020A03521003D6F86 /* main.m */; };
+		C8399C6D20A0356D003D6F86 /* GButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C8399C6C20A0356D003D6F86 /* GButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		C8399C4D20A03521003D6F86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8399C4F20A03521003D6F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8399C5020A03521003D6F86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C8399C6B20A0356D003D6F86 /* GButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GButton.h; sourceTree = "<group>"; };
+		C8399C6C20A0356D003D6F86 /* GButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 		C8399C3520A0351F003D6F86 = {
 			isa = PBXGroup;
 			children = (
+				C8399C6A20A03559003D6F86 /* GButton */,
 				C8399C4020A0351F003D6F86 /* testGButton */,
 				C8399C3F20A0351F003D6F86 /* Products */,
 			);
@@ -69,6 +73,16 @@
 				C8399C5020A03521003D6F86 /* main.m */,
 			);
 			path = testGButton;
+			sourceTree = "<group>";
+		};
+		C8399C6A20A03559003D6F86 /* GButton */ = {
+			isa = PBXGroup;
+			children = (
+				C8399C6B20A0356D003D6F86 /* GButton.h */,
+				C8399C6C20A0356D003D6F86 /* GButton.m */,
+			);
+			name = GButton;
+			path = ../GButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +158,7 @@
 				C8399C4620A0351F003D6F86 /* ViewController.m in Sources */,
 				C8399C5120A03521003D6F86 /* main.m in Sources */,
 				C8399C4320A0351F003D6F86 /* AppDelegate.m in Sources */,
+				C8399C6D20A0356D003D6F86 /* GButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
