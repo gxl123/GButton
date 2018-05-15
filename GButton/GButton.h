@@ -10,4 +10,7 @@
 
 @interface GButton : UIButton
 
+- (instancetype)initWithShadow;
+- (instancetype)initWithBlock: (void (^)(void))block;
+
 @end

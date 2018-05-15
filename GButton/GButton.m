@@ -8,9 +8,18 @@
 
 #import "GButton.h"
 
+typedef void(^buttonClickedBlock)(void);
+
+@interface GButton()
+
+@property (nonatomic, copy) buttonClickedBlock buttonClickedBlock;
+
+@end
+
 @implementation GButton
 
-- (instancetype)init{
+#pragma mark - 带阴影边框按钮
+- (instancetype)initWithShadow{
     self = [super init];
     if (self) {
         
@@ -31,4 +40,19 @@
     self.alpha = selected ? 1:0.5;
 }
 
+#pragma mark - 带Block按钮
+- (instancetype)initWithBlock: (void (^)(void))block{
+    self = [super init];
+    if (self) {
+        _buttonClickedBlock = block;
+        [self addTarget:self action:@selector(_btnAction:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return self;
+}
+
+- (void)_btnAction:(UIButton *)sender{
+    if (_buttonClickedBlock) {
+        _buttonClickedBlock();
+    }
+}
 @end
